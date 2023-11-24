@@ -12,6 +12,16 @@
       
       
       
+        <tags>
+            
+            <tag> windows </tag>
+            
+            <tag> c/c++ </tag>
+            
+            <tag> PE文件 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -25,6 +35,14 @@
       
       
       
+        <tags>
+            
+            <tag> c/c++ </tag>
+            
+            <tag> template </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -37,6 +55,16 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> c/c++ </tag>
+            
+            <tag> Linux </tag>
+            
+            <tag> epoll </tag>
+            
+        </tags>
       
     </entry>
     
