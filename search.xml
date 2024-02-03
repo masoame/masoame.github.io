@@ -4,6 +4,42 @@
   
     
     <entry>
+      <title>asm_windows</title>
+      <link href="/2024/02/03/asm-windows/"/>
+      <url>/2024/02/03/asm-windows/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="windows下的汇编"><a href="#windows下的汇编" class="headerlink" title="windows下的汇编"></a>windows下的汇编</h1><p><strong>（编译器使用msvc，不同编译器可能编译效果不同）</strong></p><h2 id="一、X86下的ASM与C-C"><a href="#一、X86下的ASM与C-C" class="headerlink" title="一、X86下的ASM与C&#x2F;C++"></a>一、X86下的ASM与C&#x2F;C++</h2><p>函数调用</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">push ebp<span class="comment">//保存上一个函数的栈帧的</span></span><br><span class="line">mov ebp,esp<span class="comment">//从当前栈顶开辟为一个新栈帧</span></span><br><span class="line">    </span><br><span class="line">...<span class="comment">//函数的执行部分</span></span><br><span class="line">    </span><br><span class="line">mov esp,ebp<span class="comment">//函数调用结束还原栈</span></span><br><span class="line">pop ebp<span class="comment">//弹出上一个栈的栈帧</span></span><br></pre></td></tr></table></figure><p>函数调用约定stdcall 、cdecl  、fastcall、__declspec(naked)</p><h2 id="二、x64下的ASM与C-C"><a href="#二、x64下的ASM与C-C" class="headerlink" title="二、x64下的ASM与C&#x2F;C++"></a>二、x64下的ASM与C&#x2F;C++</h2><p>在64位下函数调用msvc编译器处理比较特别可能并没有用到rbp寄存器</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><p>参考资料：<a href="https://learn.microsoft.com/zh-cn/cpp/cpp/calling-conventions?view=msvc-170">调用约定</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> windows </tag>
+            
+            <tag> c/c++ </tag>
+            
+            <tag> asm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>寄存器</title>
+      <link href="/2024/01/31/register/"/>
+      <url>/2024/01/31/register/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="32位寄存器"><a href="#32位寄存器" class="headerlink" title="32位寄存器"></a>32位寄存器</h2><h2 id="64位寄存器"><a href="#64位寄存器" class="headerlink" title="64位寄存器"></a>64位寄存器</h2>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ffmpeg</title>
       <link href="/2023/12/06/ffmpeg/"/>
       <url>/2023/12/06/ffmpeg/</url>
@@ -69,9 +105,9 @@
       
         <tags>
             
-            <tag> c/c++ </tag>
-            
             <tag> windows </tag>
+            
+            <tag> c/c++ </tag>
             
             <tag> PE文件 </tag>
             
